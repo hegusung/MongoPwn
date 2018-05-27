@@ -44,7 +44,7 @@ def main():
     parser = argparse.ArgumentParser(description='Tool to exploit Mongo database', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('ip_range', help='ip or ip range', nargs='?', default=None)
     parser.add_argument('-H', help='Host:port file', dest='host_file', default=None)
-    parser.add_argument('-p', help='port', dest='port', default=5900, type=int)
+    parser.add_argument('-p', help='port', dest='port', default=27017, type=int)
     parser.add_argument('-t', help='timeout', nargs='?', default=15, type=int, dest='timeout')
     parser.add_argument('--list-db', help='list databases', action='store_true', dest='list_db')
 
